@@ -25,6 +25,16 @@ bool readSwitch(byte channelInput, bool defaultValue){
   return (ch > 50);
 }
 
+/*
+void motor_control(int forward_back_val, int steering_val){
+  left_speed = forward_back_val + steering_val;
+  right_speed = forward_back_val - steering_val;
+  //left_speed = constrain(left_speed, -100, 100);
+  //right_speed = constrain(right_speed, -100, 100);
+  //left_motor_control(map(left_speed, -100, 100, 1000, 2000));
+  //right_motor_control(map(right_speed, -100, 100, 1000, 2000));
+}
+*/
 //Both of the motor control fucntions will write the values into microeconds
 //so we can control both of the motors through the different wires.
 void left_motor_control(int val) {
